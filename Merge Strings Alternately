@@ -1,0 +1,22 @@
+class Solution {
+    public String mergeAlternately(String str1, String str2) {
+        int count=0;
+        int l1 = str1.length();
+        int l2 = str2.length();
+        StringBuilder str_cat = new StringBuilder();
+        if(l1==0){
+            return str2;
+        }else{
+            while(count<l1 && count<l2){
+                str_cat.append(str1.charAt(count)+""+str2.charAt(count));
+                count++;
+            }
+            if(l1<l2){
+                str_cat.append(str2.substring(count,l2));
+            }else{
+                str_cat.append(str1.substring(count,l1));
+            }
+            return str_cat.toString();
+        }
+    }
+}
