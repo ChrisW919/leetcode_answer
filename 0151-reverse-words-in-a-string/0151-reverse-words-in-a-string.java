@@ -5,11 +5,10 @@ class Solution {
         s=s.trim();
         String[] temp= s.split("\\s+");
         int arrCount=temp.length;
-        Collections.reverse(Arrays.asList(temp));
         StringBuilder sb=new StringBuilder(50);
-        for(int i=0;i<arrCount;i++){
+        for(int i=arrCount-1;i>=0;i--){
             sb.append(temp[i]);
-            if(i!=arrCount-1){
+            if(i!=0){
                 sb.append(" ");
             }
         }
