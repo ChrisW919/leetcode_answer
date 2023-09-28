@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public void moveZeroes(int[] nums) {
         int num_len=nums.length;
