@@ -2,7 +2,6 @@ import java.lang.Math;
 
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
-        int s_p=k;
         int num_len=nums.length;
         double total=nums[0];
         for(int i=1;i<k;i++){
