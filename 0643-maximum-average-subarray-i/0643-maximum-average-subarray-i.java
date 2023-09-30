@@ -16,8 +16,6 @@ class Solution {
                 max_val=total;
             }
         }
-        double factor = 1e5;
-        double result = Math.round((max_val/k) * factor) / factor;
-        return result;
+        return Math.round((max_val/k) * 1e5) / 1e5;
     }
 }
