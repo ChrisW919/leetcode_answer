@@ -15,6 +15,8 @@ class Solution:
                 count-=1
             if count>max_c:
                 max_c=count
+                if max_c==k:
+                    return max_c
             poi+=1
         return max_c
 
